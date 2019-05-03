@@ -1,14 +1,3 @@
----
-title: "CodeBook.md"
-author: "Hugo Aita"
-date: "1 de mayo de 2019"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 # CodeBook for the tidy dataset
 This dataset is derived from the "Human Activity Recognition Using Smartphones Data Set" which was originally made avaiable here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 The data set that this code book apply is located in the `tidy_data.txt`. It is a text file, containing separated spaced values. The first row contains the names of the variables, which are described below, were the following rows contains the values of these variables.
