@@ -31,29 +31,29 @@ The measurements can be classified in two domains:
 To understand how the data was collected, see the Appendix.
 #### Time-domain signals
 * Average time domain acceleration in the X, Y and Z directions:
-  * timeDomainBodyAcceleration-Mean-X                             
-  * timeDomainBodyAcceleration-Mean-Y
-  * timeDomainBodyAcceleration-Mean-Z  
+  * timeDomainBodyAccelerometer-Mean-X                             
+  * timeDomainBodyAccelerometer-Mean-Y
+  * timeDomainBodyAccelerometer-Mean-Z  
 * Standard deviation of time-domain body acceleration in the X, Y and Z directions:
-  * timeDomainBodyAcceleration-StandardDeviation-X                
-  * timeDomainBodyAcceleration-StandardDeviation-Y
-  * timeDomainBodyAcceleration-StandardDeviation-Z
+  * timeDomainBodyAccelerometer-StandardDeviation-X                
+  * timeDomainBodyAccelerometer-StandardDeviation-Y
+  * timeDomainBodyAccelerometer-StandardDeviation-Z
 * Average time-domain gravity in the X, Y and Z directions:
-  * timeDomainGravityAcceleration-Mean-X
-  * timeDomainGravityAcceleration-Mean-Y
-  * timeDomainGravityAcceleration-Mean-Z
+  * timeDomainGravityAccelerometer-Mean-X
+  * timeDomainGravityAccelerometer-Mean-Y
+  * timeDomainGravityAccelerometer-Mean-Z
 * Standard deviation of the time-domain gravity acceleration in the X, Y and Z directions
-  * timeDomainGravityAcceleration-StandardDeviation-X
-  * timeDomainGravityAcceleration-StandardDeviation-Y
-  * timeDomainGravityAcceleration-StandardDeviation-Z
+  * timeDomainGravityAccelerometer-StandardDeviation-X
+  * timeDomainGravityAccelerometer-StandardDeviation-Y
+  * timeDomainGravityAccelerometer-StandardDeviation-Z
 * Average time-domain body acceleration jerk in the X, Y and Z directions:
-  * timeDomainBodyAccelerationJerk-Mean-X                         
-  * timeDomainBodyAccelerationJerk-Mean-Y
- * timeDomainBodyAccelerationJerk-Mean-Z
+  * timeDomainBodyAccelerometerJerk-Mean-X                         
+  * timeDomainBodyAccelerometerJerk-Mean-Y
+ * timeDomainBodyAccelerometerJerk-Mean-Z
 * Standard deviation of the time-domain body acceleration jerk in the X, Y and Z directions:
-  * timeDomainBodyAccelerationJerk-StandardDeviation-X
-  * timeDomainBodyAccelerationJerk-StandardDeviation-Y            
-  * timeDomainBodyAccelerationJerk-StandardDeviation-Z
+  * timeDomainBodyAccelerometerJerk-StandardDeviation-X
+  * timeDomainBodyAccelerometerJerk-StandardDeviation-Y            
+  * timeDomainBodyAccelerometerJerk-StandardDeviation-Z
 * Average time-domain body angular velocity in the X, Y and Z directions:
   * timeDomainBodyGyroscope-Mean-X                                
   * timeDomainBodyGyroscope-Mean-Y
@@ -71,17 +71,17 @@ To understand how the data was collected, see the Appendix.
   * timeDomainBodyGyroscopeJerk-StandardDeviation-Y               
   * timeDomainBodyGyroscopeJerk-StandardDeviation-Z   
 * Average of the time-domain magnitude of body acceleration
-  * timeDomainBodyAccelerationMagnitude-Mean
+  * timeDomainBodyAccelerometerMagnitude-Mean
 * Standard deviation of the time-domain of body acceleration
-  * timeDomainBodyAccelerationMagnitude-StandardDeviation         
+  * timeDomainBodyAccelerometerMagnitude-StandardDeviation         
 * Average of time-domain magnitude of gravity acceleration
-  * timeDomainGravityAccelerationMagnitude-Mean
+  * timeDomainGravityAccelerometerMagnitude-Mean
 * Standard deviation of time-domain magnitude of gravity acceleration
-  * timeDomainGravityAccelerationMagnitude-StandardDeviation
+  * timeDomainGravityAccelerometerMagnitude-StandardDeviation
 * Average of time-domain magnitude of body acceleration jerk
-  * timeDomainBodyAccelerationJerkMagnitude-Mean
+  * timeDomainBodyAccelerometerJerkMagnitude-Mean
 * Standard deviation of time-domain magnitude of body acceleration jerk
-  * timeDomainBodyAccelerationJerkMagnitude-StandardDeviation
+  * timeDomainBodyAccelerometerJerkMagnitude-StandardDeviation
 * Average of time-domain magnitude of body angular velocity
   * timeDomainBodyGyroscopeMagnitude-Mean
 * Standard deviation of time-domain magnitude of body angular velocity
@@ -130,15 +130,16 @@ To understand how the data was collected, see the Appendix.
 
 ## Creation of the file `tidy_data.txt`
 1. The training and test sets were merged to create a new dataset.
-2. The measurements from the mean and the standard deviation were extracted for each measurement, and the other were discarded.
-3. The activity identifiers were replaced by descriptive activity names.
-4. The variable names were replaced with descriptive names (e.g. tBodyAcc-mean-X was expanded to timeDomainBodyAccelerometerMean-X), using the rules
+2. The names of this new dataset was set using the variables in the file `features.txt`.
+3. The measurements from the mean and the standard deviation were extracted for each measurement, and the other were discarded.
+4. The activity identifiers were replaced by descriptive activity names.
+5. The variable names were replaced with descriptive names (e.g. tBodyAcc-mean-X was expanded to timeDomainBodyAccelerometerMean-X), using the rules
    * Special characters (i.e. ( , ) and -) were removed
    * The initial `t` and `f` were expanded to `timeDomain` and `frequencyDomain` respectively.
    * `Acc`, `Gyro`, `Mag`, `Freq`, `mean` and `std` were replaced by `Accelerometer`, `Gyroscope`, `Magnitude`, `Frequency`, `Mean` and `StandardDeviation` respectively.
    * Replaced incorrect `BodyBody` with `Body`.
-5. From the data set in step 4, the final data set `tidy_data.txt` was created with the average of each activity and each data.
-  
+6. The data set `tidy_data.txt` is a data set of 180 rows and 68 columns. The first row of the file contains the names of the data set: the first two columns are just **subject** and **activity**, and the other 66 are the variables we described in the previous section. To obtain the data set we averaged over each activity and each data.
+
 ## Appendix
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the Accelerometer signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
