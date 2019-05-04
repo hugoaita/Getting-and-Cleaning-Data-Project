@@ -4,19 +4,19 @@ One of the most exciting areas in all of data science right now is wearable comp
 In this project, data collected from the accelerometer and gyroscope of the Samsung Galaxy S was retrieved, worked with, and cleaned to prepare a tidy data set that can be used for later analysis.
 
 This repository contains the following files:
-- README.md, this file that provides an overview of the data set and how it was created
-- summarized_data.txt, which contains the tidy data set
-- CodeBook.md, the code book, which describes the contents of the data set
-- run_analysis.R, the R script that was used to create the data set
+- `README.md`, this file that provides an overview of the data set and how it was created
+- `tidy_data.txt`, which contains the tidy data set
+- `CodeBook.md`, the code book, which describes the contents of the data set
+- `run_analysis.R`, the R script that was used to create the data set
 
 ## Description of the original data set
 The first step of the script `run_analysis.R` is to download the data set, if it does not exist. After unziping the file we are found with the following files:
 <ul>
-<li> `./UCI HAR DATASET` </li>
-<li> `./UCI HAR DATASET/README.txt`: Explanation of the project. </li>
-<li> `./UCI HAR DATASET/features.txt`: Two column file, the first is an integer and the second a string describing the feature. </li>
-<li> `./UCI HAR DATASET/features_info.txt`: File explaining the features. </li>
-<li> `./UCI HAR DATASET/activity_labels.txt`: Associates numbers with activities. </li>
+<li> <tt> ./UCI HAR DATASET` </tt> </li>
+<li> <tt>./UCI HAR DATASET/README.txt </tt>: Explanation of the project. </li>
+<li> <tt>./UCI HAR DATASET/features.txt </tt>: List of all  features. </li>
+<li> <tt>./UCI HAR DATASET/features_info.txt </tt>: Show information about the variables used on the feature vector. </li>
+<li> <tt>./UCI HAR DATASET/activity_labels.txt </tt>: Associates numbers with activities. </li>
 <ul>
 <li>  1   WALKING </li>
 <li>  2   WALKING_UPSTAIRS </li>
@@ -25,15 +25,17 @@ The first step of the script `run_analysis.R` is to download the data set, if it
 <li>  5   STANDING </li>
 <li>  6   LAYING </li>
 </ul>
-<li> `./UCI HAR DATASET/train/subject_train.txt`: List of the train subjects. There are 30 train subject, so in this file we have an integer from 1 to 30. It has 7352 rows. </li>
-<li> `./UCI HAR DATASET/train/X_train.txt`: Data set of 7352 rows and 561 columns. It is normalized to [-1, 1]. </li>
-<li> `./UCI HAR DATASET/train/y_train.txt`: Data set of 1 column and 7352 rows that describes the activities (numbers from 1 to 6). </li>
-<li> `./UCI HAR DATASET/test/subject_test.txt`: List of the train subjects. There are 30 train subject, so in this file we have an integer from 1 to 30. It has 2947 rows. </li>
-<li> `./UCI HAR DATASET/test/X_test.txt`: Data set of 2947 rows and 561 columns. It is normalized to [-1,1] </li>
-<li> `./UCI HAR DATASET/test/y_test.txt`: Data set of 1 column and 2947 rows that describes the activities (numbers from 1 to 6). </li>
-<li> `./UCI HAR DATASET/train/Inertial Signals`: Raw experiment signals.</li>
-<li> `./UCI HAR DATASET/test/Inertial Signals`: Raw experiment signals</li>
+<li> <tt> ./UCI HAR DATASET/train/subject_train.txt </tt>: List of the train subjects. There are 30 train subject, so in this file we have an integer from 1 to 30. It has 7352 rows. </li>
+<li> <tt> ./UCI HAR DATASET/train/X_train.txt </tt>: Data set of 7352 rows and 561 columns. It is normalized to [-1, 1]. </li>
+<li> <tt> ./UCI HAR DATASET/train/y_train.txt </tt>: Data set of 1 column and 7352 rows that describes the activities (numbers from 1 to 6). </li>
+<li> <tt> ./UCI HAR DATASET/test/subject_test.txt </tt>: List of the train subjects. There are 30 train subject, so in this file we have an integer from 1 to 30. It has 2947 rows. </li>
+<li> <tt> ./UCI HAR DATASET/test/X_test.txt </tt>: Data set of 2947 rows and 561 columns. It is normalized to [-1,1] </li>
+<li> <tt> ./UCI HAR DATASET/test/y_test.txt </tt>: Data set of 1 column and 2947 rows that describes the activities (numbers from 1 to 6). </li>
+<li> <tt> ./UCI HAR DATASET/(train|test)/Inertial Signals/total_acc_x_(train|test).txt </tt>: The  acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 vector. The same description applies for the  <tt> total_acc_y_(train|test).txt </tt> and   <tt> total_acc_z_(train|test).txt </tt> files for the Y and Z axis. </li>
+<li> <tt> ./UCI HAR DATASET/(train|test)/Inertial Signals/body_acc_x_(train|test).txt </tt> :The body acceleration signasl obtained by subtracting the gravity from the total acceleration. As above, we have files for the Y and Z axis. </li>
+<li> <tt> ./UCI HAR DATASET/(train|test)/Inertial Signals/body_gyro_x_(train|test).txt </tt>:       The angular velocity measured by the gyroscope for each windows sample. The units are radians/second. Same as above for Y and Z.      </li>
 </ul>
+
 ## Creating the data set
 The R script run_analysis.R can be used to create the data set. It retrieves the source data and transform it to produce the final data set by implementing the following steps.
 
@@ -50,5 +52,5 @@ means replacing 1, 2, 3... by WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, etc
 
 The scripts depends on the library dplyr. We used version 0.8.0.1.
 
-The summarized_data.txt in this repository was created by running run_analysis.R script using R version 3.5.3 (2019-03-11) on Ubuntu 18.10 OS.
+The `tidy_data.txt` in this repository was created by running run_analysis.R script using R version 3.5.3 (2019-03-11) on Ubuntu 18.10 OS.
 
