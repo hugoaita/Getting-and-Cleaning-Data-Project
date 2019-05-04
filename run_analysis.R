@@ -40,7 +40,7 @@ features <- read.table(file.path(path, "", "features.txt"),
 
 ## Load Activity labels: 1: WALKING, 2: WALKING_UPSTAIRS, 
 ## 3: WALKING_DOWNSTAIRS,  ## 
-## 4: SITTING, 5: STANDING, 6: LAYING                                        ##
+## 4: SITTING, 5: STANDING, 6: LAYING                                        
 activities <- read.table(file.path(path, "", "activity_labels.txt")) 
 colnames(activities) <- c("Id", "activityLabel")
 ## Merges the training and test datasets
@@ -62,16 +62,19 @@ colnames(data) <- c("subject", features[,2], "activity")
  
 
 ## Extract only the measurements of the mean and the standard deviation
-## for each measurement
+## for each measurement. We exclude the variables  with ...meanFreq...
 colsToKeep <- grepl("subject|activity|mean|std", colnames(data)) &!
               grepl("meanFreq", colnames(data))
                
 
 data <- subset(data, select=colsToKeep)
 
+############################################################
 # Uses descriptively names 
+# Change 1, 2, 3, 4, 5, 6 by WALKING, WALKING_UPSTAIRS, WALKING_DOWNSGTAIRS, ...)
 data$activity <- factor(data$activity, levels=activities[,1], labels=activities[,2])
 
+#########################################################
 # Label the dataset with descriptive variable names
 names(data) <- gsub("\\(\\)", "", names(data))
 names(data) <- gsub("mean", "Mean", names(data))
@@ -83,13 +86,15 @@ names(data) <- gsub("^f", "frequencyDomain", names(data))
 names(data) <- gsub("std", "StandardDeviation", names(data))
 
 names(data) <- gsub("BodyBody", "Body", names(data))
-print(names(data))
+
+
+#####################################################
 # Create tidy data set
 summary <- data %>% 
   group_by(subject, activity)
  summary <- summary %>%  summarize_each(funs(mean))  
- print(names(summary))  
+
 
 write.table(summary, file = "tidy_data.txt", row.names = FALSE, quote=FALSE)
-#print(summary)
+print(summary)
 
