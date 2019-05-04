@@ -30,101 +30,70 @@ The measurements can be classified in two domains:
 
 To understand how the data was collected, see the Appendix.
 #### Time-domain signals
-* Average time domain acceleration in the X, Y and Z directions:
   * timeDomainBodyAccelerometer-Mean-X                             
   * timeDomainBodyAccelerometer-Mean-Y
   * timeDomainBodyAccelerometer-Mean-Z  
-* Standard deviation of time-domain body acceleration in the X, Y and Z directions:
   * timeDomainBodyAccelerometer-StandardDeviation-X                
   * timeDomainBodyAccelerometer-StandardDeviation-Y
   * timeDomainBodyAccelerometer-StandardDeviation-Z
-* Average time-domain gravity in the X, Y and Z directions:
   * timeDomainGravityAccelerometer-Mean-X
   * timeDomainGravityAccelerometer-Mean-Y
   * timeDomainGravityAccelerometer-Mean-Z
-* Standard deviation of the time-domain gravity acceleration in the X, Y and Z directions
   * timeDomainGravityAccelerometer-StandardDeviation-X
   * timeDomainGravityAccelerometer-StandardDeviation-Y
   * timeDomainGravityAccelerometer-StandardDeviation-Z
-* Average time-domain body acceleration jerk in the X, Y and Z directions:
   * timeDomainBodyAccelerometerJerk-Mean-X                         
   * timeDomainBodyAccelerometerJerk-Mean-Y
- * timeDomainBodyAccelerometerJerk-Mean-Z
-* Standard deviation of the time-domain body acceleration jerk in the X, Y and Z directions:
+  * timeDomainBodyAccelerometerJerk-Mean-Z
   * timeDomainBodyAccelerometerJerk-StandardDeviation-X
   * timeDomainBodyAccelerometerJerk-StandardDeviation-Y            
   * timeDomainBodyAccelerometerJerk-StandardDeviation-Z
-* Average time-domain body angular velocity in the X, Y and Z directions:
   * timeDomainBodyGyroscope-Mean-X                                
   * timeDomainBodyGyroscope-Mean-Y
   * timeDomainBodyGyroscope-Mean-Z                                
-* Standard deviation of the time-domain body angular velocity in the X, Y and Z directions
   * timeDomainBodyGyroscope-StandardDeviation-X
   * timeDomainBodyGyroscope-StandardDeviation-Y                   
   * timeDomainBodyGyroscope-StandardDeviation-Z
-* Average time-domain body angular velocity jerk in the X, Y and Z directions:
   * timeDomainBodyGyroscopeJerk-Mean-X
   * timeDomainBodyGyroscopeJerk-Mean-Y                            
   * timeDomainBodyGyroscopeJerk-Mean-Z
-* Standard deviation of the time-domain body acceleration jerk in the X, Y and Z directions
   * timeDomainBodyGyroscopeJerk-StandardDeviation-X
   * timeDomainBodyGyroscopeJerk-StandardDeviation-Y               
   * timeDomainBodyGyroscopeJerk-StandardDeviation-Z   
-* Average of the time-domain magnitude of body acceleration
   * timeDomainBodyAccelerometerMagnitude-Mean
-* Standard deviation of the time-domain of body acceleration
   * timeDomainBodyAccelerometerMagnitude-StandardDeviation         
-* Average of time-domain magnitude of gravity acceleration
   * timeDomainGravityAccelerometerMagnitude-Mean
-* Standard deviation of time-domain magnitude of gravity acceleration
   * timeDomainGravityAccelerometerMagnitude-StandardDeviation
-* Average of time-domain magnitude of body acceleration jerk
   * timeDomainBodyAccelerometerJerkMagnitude-Mean
-* Standard deviation of time-domain magnitude of body acceleration jerk
   * timeDomainBodyAccelerometerJerkMagnitude-StandardDeviation
-* Average of time-domain magnitude of body angular velocity
   * timeDomainBodyGyroscopeMagnitude-Mean
-* Standard deviation of time-domain magnitude of body angular velocity
   * timeDomainBodyGyroscopeMagnitude-StandardDeviation
-* Average of time-domain magnitude of body angular velocity jerk
   * timeDomainBodyGyroscopeJerkMagnitude-Mean
-* Standard deviation of time-domain magnitude of body angular velocity jerk
   * timeDomainBodyGyroscopeJerkMagnitude-StandardDeviation
-  
 #### Frequency domain signals
-* Average frequency-domain body acceleration in the X, Y and Z directions:
   * frequencyDomainBodyAccelerometer-Mean-X                        
   * frequencyDomainBodyAccelerometer-Mean-Y
   * frequencyDomainBodyAccelerometer-Mean-Z                        
-* Standard deviation of the frequency-domain acceleration in the X, Y and Z directions.
   * frequencyDomainBodyAccelerometer-StandardDeviation-X
   * frequencyDomainBodyAccelerometer-StandardDeviation-Y           
   * frequencyDomainBodyAccelerometer-StandardDeviation-Z   
-* Average frequency-body acceleration jerk in the X, Y and Z directions:
   * frequencyDomainBodyAccelerometerJerk-Mean-X
   * frequencyDomainBodyAccelerometerJerk-Mean-Y                    
   * frequencyDomainBodyAccelerometerJerk-Mean-Z
-* Standard deviation of the frequency-domain body acceleration jerk in the X, Y and Z directions:
   * frequencyDomainBodyAccelerometerJerk-StandardDeviation-X       
-  * frequencyDomainBodyAccelerometerJerk-StandardDeviation-Y                     * frequencyDomainBodyAccelerometerJerk-StandardDeviation-Z       
-* Average frequency-domain body angular velocity in X, Y and Z directions.
+  * frequencyDomainBodyAccelerometerJerk-StandardDeviation-Y                    * frequencyDomainBodyAccelerometerJerk-StandardDeviation-Z       
   * frequencyDomainBodyGyroscope-Mean-X
   * frequencyDomainBodyGyroscope-Mean-Y                           
   * frequencyDomainBodyGyroscope-Mean-Z
-* Standard deviation frequency-domain body angular velocity in the X, Y and Z directions:
   * frequencyDomainBodyGyroscope-StandardDeviation-X
   * frequencyDomainBodyGyroscope-StandardDeviation-Y              
   * frequencyDomainBodyGyroscope-StandardDeviation-Z              
-* Average and standard deviation of the frequency components of the frequency-domain magnitude of body acceleration:
   * frequencyDomainBodyAccelerometerMagnitude-Mean                 
   * frequencyDomainBodyAccelerometerMagnitude-StandardDeviation    
-* Average and standard deviation of the frequency-domain magnitude of body acceleration jerk
   * frequencyDomainBodyAccelerometerJerkMagnitude-Mean             
   * frequencyDomainBodyAccelerometerJerkMagnitude-StandardDeviation
-* Average and standard deviation of the frequency-domain magnitude of body angular velocity
   * frequencyDomainBodyGyroscopeMagnitude-Mean
   * frequencyDomainBodyGyroscopeMagnitude-StandardDeviation
-* Average and standard deviation of frequency-domain magnitude of body angular velocity jerk.
   * frequencyDomainBodyGyroscopeJerkMagnitude-Mean
   * frequencyDomainBodyGyroscopeJerkMagnitude-StandardDeviation
 
