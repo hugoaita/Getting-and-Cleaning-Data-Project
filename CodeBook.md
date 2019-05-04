@@ -30,72 +30,72 @@ The measurements can be classified in two domains:
 
 To understand how the data was collected, see the Appendix.
 #### Time-domain signals
-  * timeDomainBodyAccelerometer-Mean-X                             
-  * timeDomainBodyAccelerometer-Mean-Y
-  * timeDomainBodyAccelerometer-Mean-Z  
-  * timeDomainBodyAccelerometer-StandardDeviation-X                
-  * timeDomainBodyAccelerometer-StandardDeviation-Y
-  * timeDomainBodyAccelerometer-StandardDeviation-Z
-  * timeDomainGravityAccelerometer-Mean-X
-  * timeDomainGravityAccelerometer-Mean-Y
-  * timeDomainGravityAccelerometer-Mean-Z
-  * timeDomainGravityAccelerometer-StandardDeviation-X
-  * timeDomainGravityAccelerometer-StandardDeviation-Y
-  * timeDomainGravityAccelerometer-StandardDeviation-Z
-  * timeDomainBodyAccelerometerJerk-Mean-X                         
-  * timeDomainBodyAccelerometerJerk-Mean-Y
-  * timeDomainBodyAccelerometerJerk-Mean-Z
-  * timeDomainBodyAccelerometerJerk-StandardDeviation-X
-  * timeDomainBodyAccelerometerJerk-StandardDeviation-Y            
-  * timeDomainBodyAccelerometerJerk-StandardDeviation-Z
-  * timeDomainBodyGyroscope-Mean-X                                
-  * timeDomainBodyGyroscope-Mean-Y
-  * timeDomainBodyGyroscope-Mean-Z                                
-  * timeDomainBodyGyroscope-StandardDeviation-X
-  * timeDomainBodyGyroscope-StandardDeviation-Y                   
-  * timeDomainBodyGyroscope-StandardDeviation-Z
-  * timeDomainBodyGyroscopeJerk-Mean-X
-  * timeDomainBodyGyroscopeJerk-Mean-Y                            
-  * timeDomainBodyGyroscopeJerk-Mean-Z
-  * timeDomainBodyGyroscopeJerk-StandardDeviation-X
-  * timeDomainBodyGyroscopeJerk-StandardDeviation-Y               
-  * timeDomainBodyGyroscopeJerk-StandardDeviation-Z   
-  * timeDomainBodyAccelerometerMagnitude-Mean
-  * timeDomainBodyAccelerometerMagnitude-StandardDeviation         
-  * timeDomainGravityAccelerometerMagnitude-Mean
-  * timeDomainGravityAccelerometerMagnitude-StandardDeviation
-  * timeDomainBodyAccelerometerJerkMagnitude-Mean
-  * timeDomainBodyAccelerometerJerkMagnitude-StandardDeviation
-  * timeDomainBodyGyroscopeMagnitude-Mean
-  * timeDomainBodyGyroscopeMagnitude-StandardDeviation
-  * timeDomainBodyGyroscopeJerkMagnitude-Mean
-  * timeDomainBodyGyroscopeJerkMagnitude-StandardDeviation
+* timeDomainBodyAccelerometer-Mean-X                             
+* timeDomainBodyAccelerometer-Mean-Y
+* timeDomainBodyAccelerometer-Mean-Z  
+* timeDomainBodyAccelerometer-StandardDeviation-X                
+* timeDomainBodyAccelerometer-StandardDeviation-Y
+* timeDomainBodyAccelerometer-StandardDeviation-Z
+* timeDomainGravityAccelerometer-Mean-X
+* timeDomainGravityAccelerometer-Mean-Y
+* timeDomainGravityAccelerometer-Mean-Z
+* timeDomainGravityAccelerometer-StandardDeviation-X
+* timeDomainGravityAccelerometer-StandardDeviation-Y
+* timeDomainGravityAccelerometer-StandardDeviation-Z
+* timeDomainBodyAccelerometerJerk-Mean-X                         
+* timeDomainBodyAccelerometerJerk-Mean-Y
+* timeDomainBodyAccelerometerJerk-Mean-Z
+* timeDomainBodyAccelerometerJerk-StandardDeviation-X
+* timeDomainBodyAccelerometerJerk-StandardDeviation-Y            
+* timeDomainBodyAccelerometerJerk-StandardDeviation-Z
+* timeDomainBodyGyroscope-Mean-X                                
+* timeDomainBodyGyroscope-Mean-Y
+* timeDomainBodyGyroscope-Mean-Z                                
+* timeDomainBodyGyroscope-StandardDeviation-X
+* timeDomainBodyGyroscope-StandardDeviation-Y                   
+* timeDomainBodyGyroscope-StandardDeviation-Z
+* timeDomainBodyGyroscopeJerk-Mean-X
+* timeDomainBodyGyroscopeJerk-Mean-Y                            
+* timeDomainBodyGyroscopeJerk-Mean-Z
+* timeDomainBodyGyroscopeJerk-StandardDeviation-X
+* timeDomainBodyGyroscopeJerk-StandardDeviation-Y               
+* timeDomainBodyGyroscopeJerk-StandardDeviation-Z   
+* timeDomainBodyAccelerometerMagnitude-Mean
+* timeDomainBodyAccelerometerMagnitude-StandardDeviation         
+* timeDomainGravityAccelerometerMagnitude-Mean
+* timeDomainGravityAccelerometerMagnitude-StandardDeviation
+* timeDomainBodyAccelerometerJerkMagnitude-Mean
+* timeDomainBodyAccelerometerJerkMagnitude-StandardDeviation
+* timeDomainBodyGyroscopeMagnitude-Mean
+* timeDomainBodyGyroscopeMagnitude-StandardDeviation
+* timeDomainBodyGyroscopeJerkMagnitude-Mean
+* timeDomainBodyGyroscopeJerkMagnitude-StandardDeviation
 #### Frequency domain signals
-  * frequencyDomainBodyAccelerometer-Mean-X                        
-  * frequencyDomainBodyAccelerometer-Mean-Y
-  * frequencyDomainBodyAccelerometer-Mean-Z                        
-  * frequencyDomainBodyAccelerometer-StandardDeviation-X
-  * frequencyDomainBodyAccelerometer-StandardDeviation-Y           
-  * frequencyDomainBodyAccelerometer-StandardDeviation-Z   
-  * frequencyDomainBodyAccelerometerJerk-Mean-X
-  * frequencyDomainBodyAccelerometerJerk-Mean-Y                    
-  * frequencyDomainBodyAccelerometerJerk-Mean-Z
-  * frequencyDomainBodyAccelerometerJerk-StandardDeviation-X       
-  * frequencyDomainBodyAccelerometerJerk-StandardDeviation-Y                    * frequencyDomainBodyAccelerometerJerk-StandardDeviation-Z       
-  * frequencyDomainBodyGyroscope-Mean-X
-  * frequencyDomainBodyGyroscope-Mean-Y                           
-  * frequencyDomainBodyGyroscope-Mean-Z
-  * frequencyDomainBodyGyroscope-StandardDeviation-X
-  * frequencyDomainBodyGyroscope-StandardDeviation-Y              
-  * frequencyDomainBodyGyroscope-StandardDeviation-Z              
-  * frequencyDomainBodyAccelerometerMagnitude-Mean                 
-  * frequencyDomainBodyAccelerometerMagnitude-StandardDeviation    
-  * frequencyDomainBodyAccelerometerJerkMagnitude-Mean             
-  * frequencyDomainBodyAccelerometerJerkMagnitude-StandardDeviation
-  * frequencyDomainBodyGyroscopeMagnitude-Mean
-  * frequencyDomainBodyGyroscopeMagnitude-StandardDeviation
-  * frequencyDomainBodyGyroscopeJerkMagnitude-Mean
-  * frequencyDomainBodyGyroscopeJerkMagnitude-StandardDeviation
+* frequencyDomainBodyAccelerometer-Mean-X                        
+* frequencyDomainBodyAccelerometer-Mean-Y
+* frequencyDomainBodyAccelerometer-Mean-Z                        
+* frequencyDomainBodyAccelerometer-StandardDeviation-X
+* frequencyDomainBodyAccelerometer-StandardDeviation-Y           
+* frequencyDomainBodyAccelerometer-StandardDeviation-Z   
+* frequencyDomainBodyAccelerometerJerk-Mean-X
+* frequencyDomainBodyAccelerometerJerk-Mean-Y                    
+* frequencyDomainBodyAccelerometerJerk-Mean-Z
+* frequencyDomainBodyAccelerometerJerk-StandardDeviation-X       
+* frequencyDomainBodyAccelerometerJerk-StandardDeviation-Y                    * frequencyDomainBodyAccelerometerJerk-StandardDeviation-Z       
+* frequencyDomainBodyGyroscope-Mean-X
+* frequencyDomainBodyGyroscope-Mean-Y                           
+* frequencyDomainBodyGyroscope-Mean-Z
+* frequencyDomainBodyGyroscope-StandardDeviation-X
+* frequencyDomainBodyGyroscope-StandardDeviation-Y              
+* frequencyDomainBodyGyroscope-StandardDeviation-Z              
+* frequencyDomainBodyAccelerometerMagnitude-Mean                 
+* frequencyDomainBodyAccelerometerMagnitude-StandardDeviation    
+* frequencyDomainBodyAccelerometerJerkMagnitude-Mean             
+* frequencyDomainBodyAccelerometerJerkMagnitude-StandardDeviation
+* frequencyDomainBodyGyroscopeMagnitude-Mean
+* frequencyDomainBodyGyroscopeMagnitude-StandardDeviation
+* frequencyDomainBodyGyroscopeJerkMagnitude-Mean
+* frequencyDomainBodyGyroscopeJerkMagnitude-StandardDeviation
 
 ## Creation of the file `tidy_data.txt`
 1. The training and test sets were merged to create a new dataset.
